@@ -15,14 +15,15 @@ apt install docker-ce
 docker network remove pterodactyl_nw
 docker network create pterodactyl_nw
 cd /etc/docker
-rm daemon.json
 case $location in
     1)
         echo "Docker configuration will be set to Romania nameservers"
+        rm daemon.json
         wget https://github.com/ititanh/Docker-NS-Fix/blob/main/Romania/daemon.json
         ;;
     2)
         echo "Docker configuration will be set to Germany nameservers"
+        rm daemon.json
         wget https://github.com/ititanh/Docker-NS-Fix/blob/main/Germany/daemon.json
         ;;
     *)
