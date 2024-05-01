@@ -35,4 +35,4 @@ docker network ls
 systemctl start wings
 
 
-echo "Docker his now fixed."
+echo "Docker is now fixed."
