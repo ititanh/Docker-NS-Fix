@@ -19,12 +19,12 @@ case $location in
     1)
         echo "Docker configuration will be set to Romania nameservers"
         rm daemon.json
-        wget https://raw.githubusercontent.com/ititanh/Docker-NS-Fix/master/Romania/daemon.js
+        wget https://raw.githubusercontent.com/ititanh/Docker-NS-Fix/main/Romania/daemon.json
         ;;
     2)
         echo "Docker configuration will be set to Germany nameservers"
         rm daemon.json
-        wget https://raw.githubusercontent.com/ititanh/Docker-NS-Fix/master/dockerfix.sh/Germany/daemon.js
+        wget https://raw.githubusercontent.com/ititanh/Docker-NS-Fix/main/Germany/daemon.json
         ;;
     *)
         echo "Invalid selection. Please choose either 1 or 2."
