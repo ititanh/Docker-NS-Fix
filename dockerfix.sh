@@ -10,8 +10,8 @@ read location
 
 
 systemctl stop wings
-apt remove docker-ce
-apt install docker-ce
+apt remove -y docker-ce
+apt install -y docker-ce
 docker network remove pterodactyl_nw
 docker network create pterodactyl_nw
 cd /etc/docker
